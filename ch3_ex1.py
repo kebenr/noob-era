@@ -1,5 +1,5 @@
-hours = 45
-rate = 10
+hours = input('enter hours here ')
+rate = input('enter rate here ')
 pay = 'dog'
 
 try:
