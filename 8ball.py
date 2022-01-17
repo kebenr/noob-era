@@ -1,33 +1,28 @@
 import random
 name = ('dog water')
 question = ('super dog water or nah?')
-answer = ('')
+answer = ['yes dog', 'decidely brother', 'doubt none', 'faded. try again', 'im lazy rn ask later',
+'better off not knowing rn', 'lmao nah', 'not so good', 'very sus']
 
-random_number = random.randint(1,12)
+random_number = random.randint(1,9)
 if random_number == 1:
-  answer = ('Yes - definitely.')
+  answer = answer[0]
 elif random_number == 2:
-  answer = ('It is decidely so.')
+  answer = answer[1]
 elif random_number == 3:
-  answer = ('Without a doubt.')
+  answer = answer[2]
 elif random_number == 4:
-  answer = ('Reply hazy, try again.')
+  answer = answer[3]
 elif random_number == 5:
-  answer = ('Ask again later.')
+  answer = answer[4]
 elif random_number == 6:
-  answer = ('Better not tell you now.')
+  answer = answer[5]
 elif random_number == 7:
-  answer = ('My sources say no.')
+  answer = answer[6]
 elif random_number == 8:
-  answer = ('Outlook not so good.')
+  answer = answer[7]
 elif random_number == 9:
-  answer = ('Very doubtful')
-elif random_number == 10:
-  answer = ('you a dog cuh')
-elif random_number == 11:
-  answer = ('skrrt skrrt nah son')
-elif random_number == 12:
-  answer = ('hell yuh bruthr')
+  answer = answer[8]
 else:
   answer = ('Error')
 
@@ -39,3 +34,5 @@ elif name == (''):
 else:
   print (name + ' asks: ' + question)
   print ("Magic 8-Ball's answer:" + answer)
+
+#changelog replaced individual strings under each elif with a list
