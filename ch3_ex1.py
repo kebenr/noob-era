@@ -19,11 +19,11 @@ if hours_check == -1:
     print('error, please enter number value')
 
 if hours_check and rate_check > 0:
-    if hours <= 40:
+    if fh <= 40:
         pay = fh * fr
-    elif hours > 40:
+    elif fh > 40:
         basepay = 40 * fr
-        rate = fr * 1.5
+        fr = fr * 1.5
         pay = (fh - 40) * fr + basepay
 
 
