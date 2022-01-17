@@ -21,6 +21,7 @@ if hours_check == -1:
 if hours_check and rate_check > 0:
     if fh <= 40:
         pay = fh * fr
+    #overtime pay
     elif fh > 40:
         basepay = 40 * fr
         fr = fr * 1.5
