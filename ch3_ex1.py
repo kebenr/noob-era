@@ -1,5 +1,7 @@
 hours = input('enter hours here ')
 rate = input('enter rate here ')
+fh = float(hours)
+fr = float(rate)
 pay = 'dog'
 
 try:
@@ -18,11 +20,11 @@ if hours_check == -1:
 
 if hours_check and rate_check > 0:
     if hours <= 40:
-        pay = hours * rate
+        pay = fh * fr
     elif hours > 40:
-        basepay = 40 * rate
-        rate = rate * 1.5
-        pay = (hours - 40) * rate + basepay
+        basepay = 40 * fr
+        rate = fr * 1.5
+        pay = (fh - 40) * fr + basepay
 
 
 print('Pay: $' + str(pay))
