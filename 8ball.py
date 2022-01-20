@@ -4,8 +4,7 @@ question = input('whats your question dog? ')
 answer = ['yes dog', 'decidely brother', 'no doubt esketit', 'faded. try again', 'im lazy rn ask later',
 'better off not knowing rn', 'lmao nah', 'not so good', 'very sus']
 
-dog = random.randint(0,8)
-answer = answer[dog]
+answer = answer[random.randint(0,8)]
 
 if question == (''):
   print ('yo dawg you fucced up lemme get a question')
